@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/planets-fact-site-react/static/css/main.f722747e.chunk.css",
-    "main.js": "/planets-fact-site-react/static/js/main.3a6f85fa.chunk.js",
-    "main.js.map": "/planets-fact-site-react/static/js/main.3a6f85fa.chunk.js.map",
+    "main.js": "/planets-fact-site-react/static/js/main.319f294b.chunk.js",
+    "main.js.map": "/planets-fact-site-react/static/js/main.319f294b.chunk.js.map",
     "runtime-main.js": "/planets-fact-site-react/static/js/runtime-main.50345527.js",
     "runtime-main.js.map": "/planets-fact-site-react/static/js/runtime-main.50345527.js.map",
-    "static/js/2.4cd10cf1.chunk.js": "/planets-fact-site-react/static/js/2.4cd10cf1.chunk.js",
-    "static/js/2.4cd10cf1.chunk.js.map": "/planets-fact-site-react/static/js/2.4cd10cf1.chunk.js.map",
+    "static/js/2.af58dd70.chunk.js": "/planets-fact-site-react/static/js/2.af58dd70.chunk.js",
+    "static/js/2.af58dd70.chunk.js.map": "/planets-fact-site-react/static/js/2.af58dd70.chunk.js.map",
     "static/js/3.40fa7895.chunk.js": "/planets-fact-site-react/static/js/3.40fa7895.chunk.js",
     "static/js/3.40fa7895.chunk.js.map": "/planets-fact-site-react/static/js/3.40fa7895.chunk.js.map",
     "index.html": "/planets-fact-site-react/index.html",
     "static/css/main.f722747e.chunk.css.map": "/planets-fact-site-react/static/css/main.f722747e.chunk.css.map",
-    "static/js/2.4cd10cf1.chunk.js.LICENSE.txt": "/planets-fact-site-react/static/js/2.4cd10cf1.chunk.js.LICENSE.txt",
+    "static/js/2.af58dd70.chunk.js.LICENSE.txt": "/planets-fact-site-react/static/js/2.af58dd70.chunk.js.LICENSE.txt",
     "static/media/index.css": "/planets-fact-site-react/static/media/icon-source.90231c68.svg",
     "static/media/geology-earth.61d2b324.png": "/planets-fact-site-react/static/media/geology-earth.61d2b324.png",
     "static/media/geology-jupiter.93e4e021.png": "/planets-fact-site-react/static/media/geology-jupiter.93e4e021.png",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.50345527.js",
-    "static/js/2.4cd10cf1.chunk.js",
+    "static/js/2.af58dd70.chunk.js",
     "static/css/main.f722747e.chunk.css",
-    "static/js/main.3a6f85fa.chunk.js"
+    "static/js/main.319f294b.chunk.js"
   ]
 }
