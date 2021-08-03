@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Header from './Header';
 import Mercury from './Mercury';
 import Venus from './Venus';
@@ -12,7 +12,7 @@ import Neptune from './Neptune';
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <>
       <Header />
       <Switch>
         <Route exact path="/">
@@ -40,7 +40,7 @@ function App() {
           <Neptune />
         </Route>
       </Switch>
-    </HashRouter>
+    </>
   );
 }
 
