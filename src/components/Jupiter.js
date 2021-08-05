@@ -10,7 +10,7 @@ function Earth() {
             planetImage={planetImageJupiter}
             internalImage={internalImageJupiter}
             geologyImage={geologyJupiter}
-            title="Jupiter"
+            name="jupiter"
             rotationTime="9.93 hours"
             revolutionTime="11.86 years"
             radius="69,911 km"

@@ -10,7 +10,7 @@ function Uranus() {
             planetImage={planetImageUranus}
             internalImage={internalImageUranus}
             geologyImage={geologyUranus}
-            title="Uranus"
+            name="uranus"
             rotationTime="17.2 hours"
             revolutionTime="84 years"
             radius="25,362 km"

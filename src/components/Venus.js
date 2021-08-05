@@ -10,7 +10,7 @@ function Venus() {
             planetImage={planetImageVenus}
             internalImage={internalImageVenus}
             geologyImage={geologyVenus}
-            title="Venus"
+            name="venus"
             rotationTime="243 days"
             revolutionTime="224.7 days"
             radius="6,051.8 km"

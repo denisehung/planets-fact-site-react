@@ -10,7 +10,7 @@ function Mars() {
             planetImage={planetImageMars}
             internalImage={internalImageMars}
             geologyImage={geologyMars}
-            title="Mars"
+            name="mars"
             rotationTime="1.03 days"
             revolutionTime="1.88 years"
             radius="3,389.5 km"

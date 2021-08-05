@@ -10,7 +10,7 @@ function Saturn() {
             planetImage={planetImageSaturn}
             internalImage={internalImageSaturn}
             geologyImage={geologySaturn}
-            title="Saturn"
+            name="saturn"
             rotationTime="10.8 hours"
             revolutionTime="29.46 years"
             radius="58,232 km"

@@ -10,7 +10,7 @@ function Earth() {
             planetImage={planetImageEarth}
             internalImage={internalImageEarth}
             geologyImage={geologyEarth}
-            title="Earth"
+            name="earth"
             rotationTime="0.99 days"
             revolutionTime="365.26 days"
             radius="6,371 km"

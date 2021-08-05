@@ -10,7 +10,7 @@ function Mercury() {
             planetImage={planetImageMercury}
             internalImage={internalImageMercury}
             geologyImage={geologyMercury}
-            title="Mercury"
+            name="mercury"
             rotationTime="58.6 days"
             revolutionTime="87.97 days"
             radius="2,439.7 km"

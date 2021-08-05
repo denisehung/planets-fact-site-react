@@ -10,7 +10,7 @@ function Neptune() {
             planetImage={planetImageNeptune}
             internalImage={internalImageNeptune}
             geologyImage={geologyNeptune}
-            title="Neptune"
+            name="neptune"
             rotationTime="16.08 hours"
             revolutionTime="164.79 years"
             radius="24,622 km"

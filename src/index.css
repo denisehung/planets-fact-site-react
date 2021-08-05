@@ -12,7 +12,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url(./images/background-stars.svg), #070724;
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -39,6 +44,20 @@ body {
   text-decoration: none;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
 .navigation {
   display: flex;
 }
@@ -51,7 +70,6 @@ body {
 }
 
 .navigation__item {
-  font-family: 'Spartan', sans-serif;
   font-size: 11px;
   line-height: 25px;
   font-weight: 700;
@@ -112,9 +130,8 @@ body {
   border-top: 4px solid #2D68F0;
 }
 
-.main-wrapper {
-  padding-left: 40px;
-  padding-right: 40px;
+.navigation__arrow {
+  display: none;
 }
 
 .main {
@@ -122,6 +139,8 @@ body {
   max-width: 1110px;
   margin: 126px auto 0 auto;
   justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .main__description {
@@ -145,7 +164,6 @@ body {
 }
 
 .main__paragraph {
-  font-family: 'Spartan', sans-serif;
   font-size: 14px;
   line-height: 25px;
   margin-top: 23px;
@@ -176,8 +194,11 @@ body {
   bottom: 0px;
 }
 
+.button-container_mobile {
+  display: none;
+}
+
 .button {
-  font-family: 'Spartan', sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
@@ -211,6 +232,8 @@ body {
   margin: 87px auto 56px auto;
   display: flex;
   justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .facts__block {
@@ -226,7 +249,6 @@ body {
 }
 
 .facts__title {
-  font-family: 'Spartan', sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   line-height: 25px;
@@ -244,7 +266,7 @@ body {
   letter-spacing: -1.5px;
 }
 
-@media (max-width: 910px) {
+@media screen and (max-width: 910px) {
   .header {
     flex-direction: column;
     padding: 32px 50px 27px 50px;
@@ -317,5 +339,265 @@ body {
   .facts__value {
     font-size: 24px;
     line-height: 31.05px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  body {
+    min-width: 350px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    height:auto;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    margin-left: 24px;
+  }
+
+  .navigation {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .navigation__link_active {
+    border: none;
+  }
+
+  .navigation__menu {
+    padding: 0;
+    top: 58px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #070724;
+    width: 100%;
+    text-align: left;
+    transition: height 0.5s ease;
+    z-index: 10;
+    height: 0;
+    overflow: hidden;
+    align-items: initial;
+  }
+
+  .navigation__menu.active {
+    height: 600px;
+  }
+
+  .navigation__item {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation__item:first-of-type {
+    padding-top: 44px;
+  }
+
+  .navigation__item:last-of-type {
+    padding-bottom: 44px;
+    border: none;
+  }
+
+  .navigation__planet-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 24px;
+  }
+
+  .navigation__planet-icon_mercury {
+    background-color: #DEF4FC;
+  }
+
+  .navigation__planet-icon_venus {
+    background-color: #F7CC7F;
+  }
+
+  .navigation__planet-icon_earth {
+    background-color: #545BFE;
+  }
+
+  .navigation__planet-icon_mars {
+    background-color: #FF6A45;
+  }
+
+  .navigation__planet-icon_jupiter {
+    background-color: #ECAD7A;
+  }
+
+  .navigation__planet-icon_saturn {
+    background-color: #FCCB6B;
+  }
+
+  .navigation__planet-icon_uranus {
+    background-color: #65F0D5;
+  }
+
+  .navigation__planet-icon_neptune {
+    background-color: #497EFA;
+  }
+
+  .navigation__link {
+    padding: 20px 80% 20px 25px;
+    font-size: 15px;
+    color: white;
+    opacity: 1;
+  }
+
+  .navigation__arrow {
+    display: block;
+    width: 4px;
+    height: 8px;
+    margin-left: auto;
+    position: absolute;
+    right: 32px;
+  }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 24px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  .button-container_mobile {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .button_mobile {
+    color: white;
+    border: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 10.08px;
+    letter-spacing: 1.93px;
+    opacity: 0.75;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: transparent;
+  }
+
+  .main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .main__image-container {
+    height: 304px;
+  }
+
+  .main__text-container {
+    text-align: center;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .main__source {
+    margin-bottom: 0;
+  }
+
+  .main__facts {
+    margin-top: 28px;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .main__image_mercury {
+    width: 111px;
+    height: 111px;
+  }
+
+  .main__image_venus {
+    width: 154px;
+    height: 154px;
+  }
+
+  .main__image_earth {
+    width: 173px;
+    height: 173px;
+  }
+
+  .main__image_earth {
+    width: 173px;
+    height: 173px;
+  }
+
+  .main__image_mars {
+    width: 129px;
+    height: 129px;
+  }
+
+  .main__image_jupiter {
+    width: 224px;
+    height: 224px;
+  }
+
+  .main__image_saturn {
+    width: 256px;
+    height: 256px;
+  }
+
+  .main__image_uranus {
+    width: 176px;
+    height: 176px;
+  }
+
+  .main__image_neptune {
+    width: 173px;
+    height: 173px;
+  }
+
+  .facts__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 13px 24px 13px 24px;
+    margin-bottom: 8px;
+  }
+
+  .facts__value {
+    font-size: 20px;
+    line-height: 25.88px;
+    letter-spacing: -0.75px;
+    margin-top: 0;
   }
 }

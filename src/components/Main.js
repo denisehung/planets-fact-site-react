@@ -25,15 +25,23 @@ function Main(props) {
 
     return (
         <div class="main-wrapper">
+        <nav className="button-container_mobile">
+                <button className="button_mobile" onClick={handleClickOverview} 
+                style={{borderBottom: overviewButtonState ? `4px solid ${props.color}` : ''}}>Overview</button>
+                <button className="button_mobile" onClick={handleClickInternal}
+                style={{borderBottom: internalButtonState ? `4px solid ${props.color}` : ''}}>Structure</button>
+                <button className="button_mobile" onClick={handleClickGeology}
+                style={{borderBottom: geologyButtonState ? `4px solid ${props.color}` : ''}}>Surface</button>
+        </nav>
             <section className="main">
                 <div className="main__image-container">
                     <img src={overviewButtonState ? props.planetImage
-                    : internalButtonState ? props.internalImage : props.planetImage} className="main__image" alt=''/>
+                    : internalButtonState ? props.internalImage : props.planetImage} className={`main__image main__image_${props.name}`} alt=''/>
                     {geologyButtonState && <img src={props.geologyImage} className="geology__image" alt='' />}
                 </div>
                 <div className="main__description">
                     <div className="main__text-container">
-                        <h1 className="main__title">{props.title}</h1>
+                        <h1 className="main__title">{props.name}</h1>
                         <p className="main__paragraph">
                         {overviewButtonState ? props.overview
                         : internalButtonState ? props.internal
