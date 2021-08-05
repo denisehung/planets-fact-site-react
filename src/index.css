@@ -584,6 +584,12 @@ img {
     height: 173px;
   }
 
+  .geology__image {
+    width: 100px;
+    height: 122px;
+    bottom: 15px;
+  }
+
   .facts__block {
     width: 100%;
     display: flex;
